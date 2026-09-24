@@ -41,7 +41,7 @@ Pick up right where you left off.
 
 | Source | Link |
 | --- | --- |
-| Google Drive | [Download here](https://discord.com/channels/1544724239649738772/1544732630828851200/1552682579600212051) |
+| Google Drive | [Download here](https://drive.google.com/file/d/11QvCu7zKSLHHKh6vNH5vgQ_J5gq41fua/view?usp=drivesdk) |
 | Amazon Appstore | Coming soon (currently in review) |
 
 ## 📝 What's New
