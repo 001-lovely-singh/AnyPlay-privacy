@@ -94,7 +94,7 @@
   <div class="page">
 
     <h1>Privacy Policy for Any Play</h1>
-    <p class="updated">Last updated: September 15, 2026</p>
+    <p class="updated">Last updated: October 10, 2026</p>
 
     <p>
       Any Play ("the app") lets you play RPG Maker MV/MZ games stored on your
@@ -126,10 +126,10 @@
 
     <h2>Your game library</h2>
     <p>
-      Any Play needs broad storage access ("All files access") to find and
-      read RPG Maker game folders you already have on your device — a
-      regular per-folder permission isn't enough for a general file
-      browser and player like this one.
+      Any Play needs broad storage access ("All files access") to find,
+      read, and write RPG Maker game folders you already have on your
+      device — a regular per-folder permission isn't enough for a general
+      file browser and player like this one.
     </p>
     <p>
       Your library (game titles, file locations, and your compatibility
@@ -139,9 +139,40 @@
       data.
     </p>
     <p>
-      Game save data is handled entirely by each individual game's own
-      code, the same way it would be in any browser — Any Play does not
-      read, collect, or transmit save data.
+      Game save data is stored on your device, in the game's own
+      <code>save</code> folder, the same way a desktop copy of the game
+      would keep it. Any Play does not collect or transmit save data.
+    </p>
+
+    <h2>Games packed inside a single file</h2>
+    <p>
+      Some games are distributed as one large <code>.exe</code> or
+      <code>package.nw</code> file instead of a normal folder. When you add
+      such a game, Any Play extracts the game's files from that file into
+      the same folder on your device so they can be played.
+    </p>
+    <ul>
+      <li>Extraction happens entirely on your device. Nothing is uploaded or sent over the internet.</li>
+      <li>Files already in your folder (for example your own save files) are never overwritten.</li>
+      <li>After a successful extraction, the app asks whether you want to delete the original packed file to save
+        space. It is deleted only if you agree, and only after the app has checked that the extracted game is
+        complete. You can choose to keep it.</li>
+    </ul>
+
+    <h2>Notifications and background activity</h2>
+    <p>
+      Extracting a large game can take several minutes. To keep it running
+      when your screen turns off or you switch to another app, Any Play runs
+      the extraction as a foreground service and shows a notification with
+      the progress and a Cancel button. It also keeps the device awake only
+      while the extraction is running.
+    </p>
+    <p>
+      On Android 13 and later the app asks for permission to show
+      notifications. This permission is optional: if you decline, extraction
+      still works, you just won't see the progress notification. Notifications
+      are created and shown on your device only; the app does not collect or
+      send any information through them.
     </p>
 
     <h2>What this app does not do</h2>
