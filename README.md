@@ -8,6 +8,8 @@ AnyPlay lets you import a game folder straight from your device and play it with
 
 - `Android`
 - `RPG Maker MV/MZ support`
+- `Kotlin`
+- `WebView`
 
 <!-- Add the rest of your tech stack here (e.g. Kotlin, WebView, etc.) -->
 
@@ -19,7 +21,7 @@ Here's what you can do with AnyPlay:
 Import any RPG Maker MV/MZ game straight from your device.
 
 - Touch Controls :
-Full touch controls with an on-screen gamepad.
+Full touch controls with an on-screen gamepad, now fully customizable (move, resize, recolor).
 
 - Controller & Keyboard Support :
 Play with a physical controller or keyboard.
@@ -41,20 +43,25 @@ Pick up right where you left off.
 
 | Source | Link |
 | --- | --- |
-| Google Drive | [Download here](https://drive.google.com/file/d/1kW7pH7Pa1PrN-Yzf8slXGFAwOGO3ZbmK/view?usp=drivesdk) |
+| GitHub Releases | [Latest release](../../releases/latest) |
 | Amazon Appstore | Coming soon (currently in review) |
 
 ## 📝 What's New
 
-### v1.1
+### v1.8
 
-- Fixed an issue where certain image files with special characters in their names would fail to load
-- Added a confirmation prompt before exiting a game, instead of closing it immediately
-- General stability improvements
+- Improved game importing — Any Play now recognizes more RPG Maker game folder layouts when you add a game
+- Import now runs in the background and shows progress. You can cancel it at any time
+- New on-screen controls — move, resize and recolor buttons, with undo and reset, saved separately for each game
+- Refreshed on-screen keyboard
+- Stability and performance improvements
 
-### v1.0
+### v1.7
 
-- Initial public release
+- Improved game loading — fixed an issue where some games stayed on a loading screen or showed a black screen at startup
+- Better compatibility with a wider range of HTML-based games
+- Improved startup stability and reliability
+- Various performance improvements and bug fixes
 
 Full release notes are on the [Releases page](../../releases).
 
