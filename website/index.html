@@ -8,7 +8,7 @@
 <meta name="description" content="Any Play is a free Android app to play RPG Maker MV/MZ games on your phone. Beta support for Unity, Godot and Ren'Py web builds, custom on-screen gamepad, cheats, offline play. Only about 5 MB.">
 <meta name="keywords" content="Any Play, Any Play APK, RPG Maker MV player Android, RPG Maker MZ player Android, play RPG Maker games on phone, Unity WebGL Android, Godot web Android, Ren'Py web Android">
 <link rel="canonical" href="https://001-lovely-singh.github.io/AnyPlay-privacy/website/">
-<meta name="theme-color" content="#251a16">
+<meta name="theme-color" content="#f8edda">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta property="og:type" content="website">
@@ -24,9 +24,8 @@
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Any Play","operatingSystem":"Android","applicationCategory":"GameApplication","description":"Free Android player for RPG Maker MV/MZ games, with beta support for Unity, Godot and Ren'Py web builds.","softwareVersion":"1.9","datePublished":"2026-09-24","fileSize":"5MB","downloadUrl":"https://github.com/001-lovely-singh/AnyPlay-privacy/releases/download/v1.9/any-play-v1.9.apk","image":"https://001-lovely-singh.github.io/AnyPlay-privacy/website/icon-512.png","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
 <style>
-:root{--bg:#251a16;--bg2:#33241d;--ink:#f8ead8;--mute:#cdb59c;--line:#58392c;--accent:#f4b36a;--accent-ink:#2b170c;--sage:#a7c496;--glow:#ffb35c;--paper:#fbf1de;--paper-ink:#4a3326;--r:24px}
-@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f8edda;--bg2:#efdcc0;--ink:#3b2430;--mute:#7a5d62;--line:#d2b690;--accent:#d8604c;--accent-ink:#fff7ee;--sage:#6f9560;--glow:#ffcf8a}}
-:root[data-theme="light"]{--bg:#f8edda;--bg2:#efdcc0;--ink:#3b2430;--mute:#7a5d62;--line:#d2b690;--accent:#d8604c;--accent-ink:#fff7ee;--sage:#6f9560;--glow:#ffcf8a}
+:root{--bg:#f8edda;--bg2:#efdcc0;--ink:#3b2430;--mute:#7a5d62;--line:#d2b690;--accent:#d8604c;--accent-ink:#fff7ee;--sage:#6f9560;--glow:#ffcf8a;--paper:#fbf1de;--paper-ink:#4a3326;--r:24px}
+:root[data-theme="dark"]{--bg:#251a16;--bg2:#33241d;--ink:#f8ead8;--mute:#cdb59c;--line:#58392c;--accent:#f4b36a;--accent-ink:#2b170c;--sage:#a7c496;--glow:#ffb35c}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:74px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -201,7 +200,7 @@ footer p{max-width:none;flex-basis:100%;margin:0}
 <script>
 (function(){
 var r=document.documentElement,b=document.getElementById('theme');
-function cur(){return r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}
+function cur(){return r.getAttribute('data-theme')||'light'}
 function paint(){b.textContent=cur()==='dark'?'☀️':'🌙'}
 try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
 paint();
